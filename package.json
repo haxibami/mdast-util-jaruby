@@ -1,0 +1,64 @@
+{
+  "name": "mdast-util-jaruby",
+  "version": "0.1.0",
+  "description": "mdast extension for Japanese ruby",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf index.d.ts",
+    "format": "prettier . -w --loglevel warn && eslint --fix .",
+    "test-type": "type-coverage",
+    "test-api": "node test.js",
+    "test-coverage": "c8 --check-coverage --branches 90 --functions 90 --lines 90 --statements 90 --reporter lcov node test.js",
+    "test": "npm run build && npm run test-type && npm run format && npm run test-coverage"
+  },
+  "keywords": [
+    "unist",
+    "mdast",
+    "mdast-util",
+    "ruby",
+    "japanese",
+    "markdown",
+    "unified"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haxibami/mdast-util-jaruby.git"
+  },
+  "author": "haxibami <contact@haxibami.net> (https://haxibami.net)",
+  "contributors": [
+    "haxibami <contact@haxibami.net> (https://haxibami.net)"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "ruby.d.ts"
+  ],
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "strict": true,
+    "ignoreCatch": true
+  },
+  "dependencies": {
+    "@types/mdast": "^3.0.10",
+    "mdast-util-from-markdown": "^1.2.0",
+    "mdast-util-to-markdown": "^1.3.0",
+    "micromark-extension-jaruby": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.13.2",
+    "c8": "^7.11.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "tape": "^5.5.2",
+    "type-coverage": "^2.21.0",
+    "typescript": "^4.6.2"
+  }
+}
