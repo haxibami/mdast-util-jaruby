@@ -3,7 +3,6 @@
  * @typedef {import('mdast-util-from-markdown').Handle} FromMarkdownHandle
  * @typedef {import('mdast-util-to-markdown').Options} ToMarkdownExtension
  * @typedef {import('mdast-util-to-markdown').Handle} ToMarkdownHandle
- * @typedef {import('mdast-util-to-markdown').Map} Map
  * @typedef {import("./ruby").Ruby} Ruby
  * @typedef {import("./ruby").RubyElement} RubyElement
  * @typedef {import("./ruby").RubyText} RubyText

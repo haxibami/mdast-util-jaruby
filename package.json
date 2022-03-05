@@ -1,6 +1,6 @@
 {
   "name": "mdast-util-jaruby",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "mdast extension for Japanese ruby",
   "scripts": {
     "build": "npm run clean && tsc",
@@ -9,7 +9,8 @@
     "test-type": "type-coverage",
     "test-api": "node test.js",
     "test-coverage": "c8 --check-coverage --branches 90 --functions 90 --lines 90 --statements 90 --reporter lcov node test.js",
-    "test": "npm run build && npm run test-type && npm run format && npm run test-coverage"
+    "test": "npm run build && npm run test-type && npm run format && npm run test-coverage",
+    "prepack": "npm run build"
   },
   "keywords": [
     "unist",
@@ -34,9 +35,9 @@
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
-    "index.js",
+    "ruby.d.ts",
     "index.d.ts",
-    "ruby.d.ts"
+    "index.js"
   ],
   "typeCoverage": {
     "atLeast": 100,
