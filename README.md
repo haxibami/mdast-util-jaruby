@@ -1,5 +1,10 @@
 # mdast-util-jaruby
 
+[![Node.js CI](https://github.com/haxibami/mdast-util-jaruby/actions/workflows/node.js.yml/badge.svg)](https://github.com/haxibami/mdast-util-jaruby/actions/workflows/node.js.yml)
+[![Node.js Package](https://github.com/haxibami/mdast-util-jaruby/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/haxibami/mdast-util-jaruby/actions/workflows/npm-publish.yml)
+[![codecov](https://codecov.io/gh/haxibami/mdast-util-jaruby/branch/main/graph/badge.svg?token=T301K9XK31)](https://codecov.io/gh/haxibami/mdast-util-jaruby)
+[![GitHub license](https://img.shields.io/github/license/haxibami/mdast-util-jaruby)](https://github.com/haxibami/mdast-util-jaruby/blob/main/LICENSE)
+
 [mdast](https://github.com/syntax-tree/mdast) extension to support Japanese ruby.
 
 ## Feature
