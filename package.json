@@ -56,7 +56,7 @@
     "c8": "7.11.0",
     "eslint": "8.11.0",
     "eslint-config-prettier": "8.5.0",
-    "prettier": "2.5.1",
+    "prettier": "2.6.0",
     "rimraf": "3.0.2",
     "tape": "5.5.2",
     "type-coverage": "2.21.1",
