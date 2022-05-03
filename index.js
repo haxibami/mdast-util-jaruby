@@ -126,6 +126,7 @@ export function jarubyToMarkdown() {
     /** @param {string | string[]} input */
     function joinText(input) {
       if (typeof input === "string") return input;
+      /* c8 ignore next */
       return input.map((text) => `[${text}]`).join("");
     }
     const base = joinText(node.base);
@@ -135,6 +136,7 @@ export function jarubyToMarkdown() {
 
   /** @type {ToMarkdownHandle} */
   function peekRuby() {
+    /* c8 ignore next 2 */
     return "{";
   }
 }
