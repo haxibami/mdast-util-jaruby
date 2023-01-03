@@ -1,6 +1,8 @@
 /**
  * @typedef {import('mdast-util-from-markdown').Extension} FromMarkdownExtension
  * @typedef {import('mdast-util-from-markdown').Handle} FromMarkdownHandle
+ * @typedef {import('mdast-util-from-markdown').CompileContext} CompileContext
+ * @typedef {import('mdast-util-from-markdown').Token} Token
  * @typedef {import('mdast-util-to-markdown').Options} ToMarkdownExtension
  * @typedef {import('mdast-util-to-markdown').Handle} ToMarkdownHandle
  * @typedef {import("./ruby").Ruby} Ruby
@@ -25,7 +27,10 @@ export function jarubyFromMarkdown() {
     },
   };
 
-  /** @type {FromMarkdownHandle}*/
+  /**
+   * @this {CompileContext}
+   * @param {Token} token
+   */
   function enterRuby(token) {
     this.enter(
       {
@@ -42,17 +47,24 @@ export function jarubyFromMarkdown() {
     );
   }
 
-  /** @type {FromMarkdownHandle}*/
+  /**
+   * @this {CompileContext}
+   */
   function enterRubyText() {
     this.stack.push({ type: "fragment", children: [] });
   }
 
-  /** @type {FromMarkdownHandle}*/
+  /**
+   * @this {CompileContext}
+   */
   function enterRubyPronunciation() {
     this.stack.push({ type: "fragment", children: [] });
   }
 
-  /** @type {FromMarkdownHandle}*/
+  /**
+   * @this {CompileContext}
+   * @param {Token} token
+   */
   function exitRuby(token) {
     const element = /** @type {Ruby} */ (this.stack[this.stack.length - 1]);
     const text = element.base;
@@ -92,14 +104,18 @@ export function jarubyFromMarkdown() {
     this.exit(token);
   }
 
-  /** @type {FromMarkdownHandle}*/
+  /**
+   * @this {CompileContext}
+   */
   function exitRubyText() {
     const data = this.resume();
     const element = /** @type {Ruby} */ (this.stack[this.stack.length - 1]);
     element.base = data;
   }
 
-  /** @type {FromMarkdownHandle}*/
+  /**
+   * @this {CompileContext}
+   */
   function exitRubyPronunciation() {
     const data = this.resume();
     const element = /** @type {Ruby} */ (this.stack[this.stack.length - 1]);
