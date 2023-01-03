@@ -28,6 +28,7 @@ export function jarubyFromMarkdown() {
   };
 
   /**
+   * @type {FromMarkdownHandle}
    * @this {CompileContext}
    * @param {Token} token
    */
@@ -48,6 +49,7 @@ export function jarubyFromMarkdown() {
   }
 
   /**
+   * @type {FromMarkdownHandle}
    * @this {CompileContext}
    */
   function enterRubyText() {
@@ -55,6 +57,7 @@ export function jarubyFromMarkdown() {
   }
 
   /**
+   * @type {FromMarkdownHandle}
    * @this {CompileContext}
    */
   function enterRubyPronunciation() {
@@ -62,6 +65,7 @@ export function jarubyFromMarkdown() {
   }
 
   /**
+   * @type {FromMarkdownHandle}
    * @this {CompileContext}
    * @param {Token} token
    */
@@ -105,6 +109,7 @@ export function jarubyFromMarkdown() {
   }
 
   /**
+   * @type {FromMarkdownHandle}
    * @this {CompileContext}
    */
   function exitRubyText() {
@@ -114,6 +119,7 @@ export function jarubyFromMarkdown() {
   }
 
   /**
+   * @type {FromMarkdownHandle}
    * @this {CompileContext}
    */
   function exitRubyPronunciation() {
@@ -142,7 +148,6 @@ export function jarubyToMarkdown() {
     /** @param {string | string[]} input */
     function joinText(input) {
       if (typeof input === "string") return input;
-      /* c8 ignore next */
       return input.map((text) => `[${text}]`).join("");
     }
     const base = joinText(node.base);
@@ -152,7 +157,6 @@ export function jarubyToMarkdown() {
 
   /** @type {ToMarkdownHandle} */
   function peekRuby() {
-    /* c8 ignore next 2 */
     return "{";
   }
 }
