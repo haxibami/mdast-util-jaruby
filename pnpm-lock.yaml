@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@types/mdast':
@@ -19,8 +23,8 @@ devDependencies:
     specifier: 5.6.0
     version: 5.6.0
   c8:
-    specifier: 7.13.0
-    version: 7.13.0
+    specifier: 7.14.0
+    version: 7.14.0
   eslint:
     specifier: 8.41.0
     version: 8.41.0
@@ -37,8 +41,8 @@ devDependencies:
     specifier: 5.6.3
     version: 5.6.3
   type-coverage:
-    specifier: 2.25.3
-    version: 2.25.3(typescript@5.0.4)
+    specifier: 2.26.0
+    version: 2.26.0(typescript@5.0.4)
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -274,8 +278,8 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /c8@7.13.0:
-    resolution: {integrity: sha512-/NL4hQTv1gBL6J6ei80zu3IiTrmePDKXKXOTLpHvcIWZTVYQlDhVWjjWvkhICylE8EwwnMVzDZugCvdx0/DIIA==}
+  /c8@7.14.0:
+    resolution: {integrity: sha512-i04rtkkcNcCf7zsQcSv/T9EbUn4RXQ6mropeMcjFOsQXQ0iGLAr/xT6TImQg4+U9hmNpN9XdvPkjUL1IzbgxJw==}
     engines: {node: '>=10.12.0'}
     hasBin: true
     dependencies:
@@ -1801,8 +1805,8 @@ packages:
       prelude-ls: 1.2.1
     dev: true
 
-  /type-coverage-core@2.25.3(typescript@5.0.4):
-    resolution: {integrity: sha512-wQLM7p9GrDvybDXbfWHT/+bLyKzlh0eRVRovgr2zCQN5QGdVsnpA7HwoaivXLOxqMLC/241xMYDysdbVmbO3BQ==}
+  /type-coverage-core@2.26.0(typescript@5.0.4):
+    resolution: {integrity: sha512-/9VQ0ySU1CKbWd/BNnbVYMJ67oOt7qdXXxm4W5VIM07AUB5eelcDjrWG7qdIj0ZafnNkpv+v5qcD68ExOVK+Sw==}
     peerDependencies:
       typescript: 2 || 3 || 4 || 5
     dependencies:
@@ -1814,12 +1818,12 @@ packages:
       typescript: 5.0.4
     dev: true
 
-  /type-coverage@2.25.3(typescript@5.0.4):
-    resolution: {integrity: sha512-uyFCy+ZHaGENOkL1lTKWxj1QqIIvEXu7K9BFxbgXer7n7Lc07vcrweGdlLIPDYQiHFH585tEnOodq0MCG4iiCA==}
+  /type-coverage@2.26.0(typescript@5.0.4):
+    resolution: {integrity: sha512-ZYtfBoifzuyiZteZeqBiauugvgIVV0orMqo2jZuOGOBCndLWhQF3Iv9bbFXyyUf/1lC/+k/ZN6Noqbh2afX3LQ==}
     hasBin: true
     dependencies:
       minimist: 1.2.7
-      type-coverage-core: 2.25.3(typescript@5.0.4)
+      type-coverage-core: 2.26.0(typescript@5.0.4)
     transitivePeerDependencies:
       - typescript
     dev: true
