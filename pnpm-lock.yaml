@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@types/mdast':
-    specifier: 3.0.15
-    version: 3.0.15
+    specifier: 4.0.3
+    version: 4.0.3
   mdast-util-from-markdown:
     specifier: 1.3.1
     version: 1.3.1
@@ -202,6 +202,12 @@ packages:
 
   /@types/mdast@3.0.15:
     resolution: {integrity: sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==}
+    dependencies:
+      '@types/unist': 2.0.6
+    dev: false
+
+  /@types/mdast@4.0.3:
+    resolution: {integrity: sha512-LsjtqsyF+d2/yFOYaN22dHZI1Cpwkrj+g06G8+qtUKlhovPW89YhqSnfKtMbkgmEtYpH2gydRNULd6y8mciAFg==}
     dependencies:
       '@types/unist': 2.0.6
     dev: false
