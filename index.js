@@ -5,9 +5,9 @@
  * @typedef {import('mdast-util-from-markdown').Token} Token
  * @typedef {import('mdast-util-to-markdown').Options} ToMarkdownExtension
  * @typedef {import('mdast-util-to-markdown').Handle} ToMarkdownHandle
- * @typedef {import("./ruby").Ruby} Ruby
- * @typedef {import("./ruby").RubyElement} RubyElement
- * @typedef {import("./ruby").RubyText} RubyText
+ * @typedef {import("./ruby.js").Ruby} Ruby
+ * @typedef {import("./ruby.js").RubyElement} RubyElement
+ * @typedef {import("./ruby.js").RubyText} RubyText
  */
 
 /**
@@ -75,7 +75,7 @@ export function jarubyFromMarkdown() {
     const pronunciation = element.text;
 
     /** @type {RubyText[]} */
-    let rubyBase = [{ type: "text", value: text }];
+    const rubyBase = [{ type: "text", value: text }];
     /** @type {string[]} */
     const array = [];
     /** @type {RubyElement[]} */

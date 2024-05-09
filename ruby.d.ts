@@ -23,7 +23,7 @@ export interface RubyElement {
 }
 
 declare module "mdast" {
-  interface StaticPhrasingContentMap {
+  interface RootContentMap {
     ruby: Ruby;
   }
 }
