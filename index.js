@@ -44,7 +44,7 @@ export function jarubyFromMarkdown() {
           hChildren: [],
         },
       },
-      token
+      token,
     );
   }
 

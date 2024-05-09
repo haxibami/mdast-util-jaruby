@@ -12,7 +12,7 @@ console.dir(
     extensions: [jaruby()],
     mdastExtensions: [jarubyFromMarkdown()],
   }),
-  { depth: null }
+  { depth: null },
 );
 
 const mdast = {
@@ -69,5 +69,5 @@ console.dir(
   toMarkdown(mdast, {
     extensions: [jarubyToMarkdown()],
   }),
-  { depth: null }
+  { depth: null },
 );

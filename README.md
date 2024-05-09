@@ -38,7 +38,7 @@ console.dir(
     extensions: [jaruby()],
     mdastExtensions: [jarubyFromMarkdown()],
   }),
-  { depth: null }
+  { depth: null },
 );
 ```
 
@@ -158,7 +158,7 @@ console.dir(
   toMarkdown(mdast, {
     extensions: [jarubyToMarkdown()],
   }),
-  { depth: null }
+  { depth: null },
 );
 ```
 
