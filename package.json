@@ -1,6 +1,6 @@
 {
   "name": "mdast-util-jaruby",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "mdast extension for Japanese ruby",
   "engines": {
     "node": ">=18"
