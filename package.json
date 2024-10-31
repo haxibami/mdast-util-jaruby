@@ -51,8 +51,8 @@
   },
   "dependencies": {
     "@types/mdast": "4.0.4",
-    "mdast-util-from-markdown": "2.0.1",
-    "mdast-util-to-markdown": "2.1.0",
+    "mdast-util-from-markdown": "2.0.2",
+    "mdast-util-to-markdown": "2.1.1",
     "micromark-extension-jaruby": "0.1.4"
   },
   "devDependencies": {
